@@ -27,7 +27,7 @@ This repository contains the full HW/SW co-design stack for task-conditional til
 
 The system co-designs three layers:
 
-1. **Task-Conditional Gating Network** (`sw/models/`): A lightweight MLP (<0.01% of backbone parameters) that maps a one-hot task command vector to a 182-bit binary tile mask, trained jointly with the backbone through a three-phase pipeline (dense, soft masks, hard masks).
+1. **Task-Conditional Gating Network** (`sw/models/`): A lightweight MLP (<0.12% of backbone parameters) that maps a one-hot task command vector to a 182-bit binary tile mask, trained jointly with the backbone through a three-phase pipeline (dense, soft masks, hard masks).
 
 2. **Neural Instruction Set Architecture** (`hw/rtl/instruction_scheduler.sv`): Each 64-byte NISA instruction carries two 64-bit tile mask fields. The instruction scheduler delivers these to the tile manager, which skips masked tiles with zero overhead.
 
