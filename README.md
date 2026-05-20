@@ -2,6 +2,14 @@
 
 This repository contains the full HW/SW co-design stack for task-conditional tile sparsity on FPGA inference accelerators. A lightweight gating network predicts per-tile binary execution masks from a task command, and the accelerator's instruction set encodes these masks to skip entire output channel tiles at zero overhead.
 
+## Closed-loop FPGA evaluation
+
+Static Eval - No NPC vehicles - FPGA inference - 4x Speed
+[StaticEval](https://github.com/user-attachments/assets/35d21e13-1176-4291-927d-5444b1b5d3a4)
+
+Dynamic Eval - 40 NPC vehicles - FPGA inference - 4x Speed
+[DynamicEval](https://github.com/user-attachments/assets/0bf6d5d8-66a6-4a70-bd23-65044bdc147f)
+
 ## Repository Structure
 
 ```
