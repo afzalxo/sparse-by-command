@@ -94,7 +94,7 @@ See individual subdirectory READMEs for detailed instructions.
 
 | StaticEval | DynamicEval (40 NPC) |
 | :---: | :---: |
-| <video src="https://github.com/user-attachments/assets/35d21e13-1176-4291-927d-5444b1b5d3a4" width="512" controls></video> | <video src="https://github.com/user-attachments/assets/0bf6d5d8-66a6-4a70-bd23-65044bdc147f" width="512" controls></video> |
+| <video src="https://github.com/user-attachments/assets/0bf6d5d8-66a6-4a70-bd23-65044bdc147f" width="512" controls></video> | <video src="https://github.com/user-attachments/assets/35d21e13-1176-4291-927d-5444b1b5d3a4" width="512" controls></video> |
 
 ## Citation
 
