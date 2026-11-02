@@ -1,0 +1,13 @@
+conv_0 256 256 3 32 2 10 1 1 1 1 0 fpga_data/weights_conv0.bin fpga_data/bias_conv0.bin fpga_data/golden_conv0.bin
+conv_1 128 128 32 64 2 9 1 1 1 13 0 fpga_data/weights_conv1.bin fpga_data/bias_conv1.bin fpga_data/golden_conv1.bin
+conv_2 64 64 64 128 2 8 1 1 1 25 0 fpga_data/weights_conv2.bin fpga_data/bias_conv2.bin fpga_data/golden_conv2.bin
+conv_3 32 32 128 256 2 8 1 1 1 15619 0 fpga_data/weights_conv3.bin fpga_data/bias_conv3.bin fpga_data/golden_conv3.bin
+conv_4 16 16 256 512 2 8 1 1 1 3010990465 0 fpga_data/weights_conv4.bin fpga_data/bias_conv4.bin fpga_data/golden_conv4.bin
+conv_5 8 8 512 512 2 9 1 1 1 1009894275 0 fpga_data/weights_conv5.bin fpga_data/bias_conv5.bin fpga_data/golden_conv5.bin
+conv_6 4 4 512 512 2 7 1 1 1 67416593 0 fpga_data/weights_conv6.bin fpga_data/bias_conv6.bin fpga_data/golden_conv6.bin
+conv_7 2 2 512 1024 2 7 1 1 1 9223514990816788497 0 fpga_data/weights_conv7.bin fpga_data/bias_conv7.bin fpga_data/golden_conv7.bin
+memcpy 0 0 0 512 0 0 0 3 0 18446744073709551615 18446744073709551615 NULL NULL fpga_data/golden_fused_features.bin
+fusion 1 1 1152 512 1 6 1 2 0 18446744073709551615 18446744073709551615 fpga_data/weights_fusion.bin fpga_data/bias_fusion.bin fpga_data/golden_fusion.bin
+b4_fc1 1 1 512 256 1 8 1 2 0 18446744073709551615 18446744073709551615 fpga_data/weights_b4_fc1.bin fpga_data/bias_b4_fc1.bin fpga_data/golden_b4_fc1.bin
+b4_fc2 1 1 256 256 1 5 1 2 0 18446744073709551615 18446744073709551615 fpga_data/weights_b4_fc2.bin fpga_data/bias_b4_fc2.bin fpga_data/golden_b4_fc2.bin
+b4_head 1 1 256 2 1 9 0 2 0 18446744073709551615 18446744073709551615 fpga_data/weights_b4_head.bin fpga_data/bias_b4_head.bin fpga_data/golden_b4_head.bin

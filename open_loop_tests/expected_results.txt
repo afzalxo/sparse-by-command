@@ -1,0 +1,14 @@
+# Per-command reference outputs (INT8 raw head [steer, accel]) and dequantized control.
+# OUTPUT_SCALES: cmd0=115.884 cmd1=48.785 cmd2=71.128 cmd3=95.048 cmd4=97.918 cmd5=14.295
+# steer/throttle = tanh(raw / OUTPUT_SCALES[cmd])
+#
+# (A) BIT-EXACT golden check (cmd0 masks + branch b{c}, vs official extracted golden_b{c}_head.bin):
+#   b0 [25,64]  b1 [-9,27]  b2 [15,39]  b3 [1,52]  b4 [13,53]  b5 [0,-65]   -> all bit-exact
+#
+# (B) SPARSE-BY-COMMAND (each command runs its own gating masks, spec_cmd{c}.txt):
+#   cmd0 follow_lane  [25, 64]   steer +0.2124  throttle +0.5022
+#   cmd1 turn_left    [-6, 27]   steer -0.1224  throttle +0.5031
+#   cmd2 turn_right   [14, 39]   steer +0.1943  throttle +0.4993
+#   cmd3 chlane_left  [-7, 52]   steer -0.0735  throttle +0.4983
+#   cmd4 chlane_right [10, 54]   steer +0.1018  throttle +0.5016
+#   cmd5 brake        [0, -65]   steer +0.0000  throttle -0.9998
